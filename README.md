@@ -18,5 +18,3 @@ Autor: Piotr Lewandowski
 
 - [Jshell tutorial](http://cr.openjdk.java.net/~rfield/tutorial/JShellTutorial.html)
 - [Jshell presentation [PL]](https://www.youtube.com/watch?v=sxDt5kliA2c)
-- [New in Java 9](http://www.baeldung.com/new-java-9)
-- [New in Java 10](https://dzone.com/articles/java-10-new-features-and-enhancements)
