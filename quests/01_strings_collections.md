@@ -34,20 +34,7 @@ boolean isPizza(String food) {
 }
 ```
 
-#### 2. Czy `new String()` jest potrzebny?
-#### -> USUNAC
-Sprawdź wynik poniższych komend:
-
-```java
-"".isEmpty();
-"one".isEmpty();
-
-new String().isEmpty();
-new String("").isEmpty();
-new String("one").isEmpty();
-```
-
-#### 3. replace & substring
+#### 2. replace & substring
 
 a) Jak podmienić fragment stringa?
 

@@ -9,8 +9,6 @@ int kb = 4095;
 int mb = ???
 ```
 
-### Set vs Map
-
 #### 3. Jak sprawdzić, że liczba jest parzysta?
 Bonus: Czy poniższe dzieli się na 502?
 
@@ -20,7 +18,36 @@ int kb = 4096
 boolean isDividedBy2 = ??
 ```
 
-#### 4. Logika - co jest wynikiem tego działania?
+
+#### 4. `Integer` vs `int`
+
+a) Czy któraś z komend spowoduje nieprawidłowe działanie?
+
+```java
+Integer i = new Integer(1);
+Integer j = 1;
+int k = new Integer(1);
+int l = 1;
+
+i == j; // true or false?
+```
+b) Jaka jest różnica w definicji metod
+
+```java
+void parseNumber(int n) {
+  return n*2;
+}
+```
+
+```java
+void parseNumber(Integer n) {
+  return n*2;
+}
+```
+
+#### 5. Set vs List
+
+#### 6. Logika - co jest wynikiem tego działania?
 Dlaczego?
 ```java
 true && true || false
@@ -29,7 +56,7 @@ false && true || false
 
 true || false && true
 ```
-### 5. Kastowanie: Jaka jest różnica pomiędzy tymi wyrażeniami?
+### 7. Kastowanie: Jaka jest różnica pomiędzy tymi wyrażeniami?
 
 ```java
 double calculations = 5 / 4
@@ -39,7 +66,7 @@ double calculations = 5.0 / 4
 int calculations = 5.0 / 4
 ```
 
-### 6. Co w Javie jest przekazywane przez referencję, co przez wartość?
+### 8. Co w Javie jest przekazywane przez referencję, co przez wartość?
 
 ```java
 class Person {
@@ -62,7 +89,7 @@ nowyNapastnik.name
 Jak sprawić, żeby obiekty były różne?
 
 
-### 6.5. A co z liczbami?
+### 8.5. A co z liczbami?
 
 ```java
 int a = 1;
@@ -74,7 +101,7 @@ a = 3;
 // Jaki wyniki w zmiennych a i b?
 ```
 
-### 7. Czy można wywołać jeden konstruktor klasy w drugim?
+### 9. Czy można wywołać jeden konstruktor klasy w drugim?
 
 ```java
 
@@ -92,18 +119,4 @@ class Person {
 
 ```
 
-### 8. Wygeneruj stringa na podstawie liczb
-
-### 9. Integer vs int
-
-```java
-void parseNumber(int n) {
-  return n*2;
-}
-```
-
-```java
-void parseNumber(Integer n) {
-  return n*2;
-}
-```
+### 10. Wygeneruj stringa na podstawie liczb
